@@ -79,3 +79,7 @@ mvnw.cmd spring-boot:run
 ./mvnw spring-boot:run
 ```
 </ul>
+
+## Usage
+
+Postman Collection: https://elements.getpostman.com/redirect?entityId=29103818-4a0fdb25-bdd3-4262-ab5a-110b2d0cfa6a&entityType=collection
