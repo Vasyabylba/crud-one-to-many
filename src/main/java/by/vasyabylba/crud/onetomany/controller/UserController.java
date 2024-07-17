@@ -41,13 +41,13 @@ public class UserController {
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public UserResponse patch(@PathVariable Long id, @RequestBody UserRequest userRequest) {
+    public UserResponse put(@PathVariable Long id, @RequestBody UserRequest userRequest) {
         return userService.put(id, userRequest);
     }
 
     @PutMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public List<Long> patchMany(@RequestParam("id") List<Long> ids, @RequestBody UserRequest userRequest) {
+    public List<Long> putMany(@RequestParam("id") List<Long> ids, @RequestBody UserRequest userRequest) {
         return userService.putMany(ids, userRequest);
     }
 
